@@ -10,12 +10,14 @@ import Map from "./components/Map.jsx";
 import Footer from "./components/Footer.jsx";
 import Nav from "./components/Nav.jsx";
 import Contact from "./components/Contact.jsx";
+import Equipment from "./components/Equipment.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Nav />
     <Home />
     <Feedback />
+    <Equipment />
     <Map />
     <Footer />
     <Contact />
