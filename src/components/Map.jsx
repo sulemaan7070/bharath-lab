@@ -7,7 +7,7 @@ function Map() {
       <div className="w-[50%] overflow-hidden ">
         <MapContainer
           center={[14.754419824099354, 78.55434815620328]}
-          zoom={8}
+          zoom={12}
           scrollWheelZoom={false}
           style={{ height: "100%", width: "100%" }}
         >

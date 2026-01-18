@@ -6,7 +6,7 @@ function Contact() {
     <div>
       <a
         className="z-50 fixed opacity-80 right-2.5 bottom-7"
-        href="https://wa.me/8519903096"
+        href="https://wa.me/918519903096"
         target="_blank"
       >
         <img className="h-14" src={WhatsappImg} alt="" />
