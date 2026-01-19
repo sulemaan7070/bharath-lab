@@ -60,11 +60,11 @@ function Contact() {
         </p>
         <a
           ref={linkRef}
-          className="absolute top-[-18px] right-10"
+          className="absolute top-[-18px] right-7"
           href="https://wa.me/918519903096"
           target="_blank"
         >
-          <img className="h-14" src={WhatsappImg} alt="" />
+          <img className="h-10" src={WhatsappImg} alt="" />
         </a>
       </div>
     </div>

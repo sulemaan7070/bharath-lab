@@ -29,7 +29,7 @@ export default function Home() {
       >
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain"
             src={hero}
             alt=""
           />
