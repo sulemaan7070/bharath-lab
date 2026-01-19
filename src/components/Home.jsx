@@ -29,7 +29,7 @@ export default function Home() {
       >
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={hero}
             alt=""
           />
@@ -37,21 +37,21 @@ export default function Home() {
 
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%]  object-cover"
+            className="rounded h-[30rem] md:h-[120%] w-[100%]  object-contain"
             src={hero2}
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={offerImg}
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={offerImg2}
             alt=""
           />
@@ -59,7 +59,7 @@ export default function Home() {
 
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover  "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain  "
             src={hero3}
             alt=""
           />
@@ -67,21 +67,21 @@ export default function Home() {
 
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={hero4}
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={offerImg}
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-contain "
             src={offerImg2}
             alt=""
           />

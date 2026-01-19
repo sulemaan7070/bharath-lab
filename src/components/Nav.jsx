@@ -5,7 +5,7 @@ export default function Nav() {
 
   return (
     <nav className="bg-[#008BFF] text-white z-20 w-full top-0 start-0 border-b border-default">
-      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a
           href="https://flowbite.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"

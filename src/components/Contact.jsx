@@ -7,13 +7,48 @@ function Contact() {
 
   useEffect(() => {
     if (linkRef.current) {
-      gsap.to(linkRef.current, {
+      const tl = gsap.timeline({ repeat: -1 });
+
+      tl.to(linkRef.current, {
         scale: 1.2,
-        duration: 0.4,
-        repeat: -1,
-        yoyo: true,
-        ease: "power2.inOut",
-      });
+        duration: 0.15,
+        ease: "power2.out",
+      })
+        .to(
+          linkRef.current,
+          {
+            scale: 1,
+            duration: 0.15,
+            ease: "power2.in",
+          },
+          0.15,
+        )
+        .to(
+          linkRef.current,
+          {
+            scale: 1.2,
+            duration: 0.15,
+            ease: "power2.out",
+          },
+          0.3,
+        )
+        .to(
+          linkRef.current,
+          {
+            scale: 1,
+            duration: 0.15,
+            ease: "power2.in",
+          },
+          0.45,
+        )
+        .to(
+          linkRef.current,
+          {
+            scale: 1,
+            duration: 0.6,
+          },
+          0.6,
+        );
     }
   }, []);
 
