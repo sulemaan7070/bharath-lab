@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from "../images/logo.png";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,11 +10,7 @@ export default function Nav() {
           href="https://flowbite.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-7"
-            alt="Flowbite Logo"
-          />
+          <img src={logo} className="h-15" alt="Flowbite Logo" />
           <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">
             Bharath Lab
           </span>

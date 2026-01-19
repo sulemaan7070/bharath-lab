@@ -2,15 +2,25 @@ import React from "react";
 import "swiper/css/navigation";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import img1 from "../images/IMG-20260104-WA0001.jpg";
 import img2 from "../images/IMG-20260104-WA0013.jpg";
+import hero from "../images/banner/hero1.jpg";
+import hero2 from "../images/banner/hero2.jpg";
+import hero3 from "../images/banner/hero3.jpg";
+import hero4 from "../images/banner/hero4.jpg";
+import offerImg from "../images/banner/offer.jpg";
+import offerImg2 from "../images/banner/offer2.jpg";
 export default function Home() {
   return (
     <div className="">
       <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Autoplay, Navigation, Pagination]}
         className="mySwiper"
         spaceBetween={10}
         slidesPerView={1}
@@ -20,7 +30,7 @@ export default function Home() {
         <SwiperSlide>
           <img
             className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
-            src={img1}
+            src={hero}
             alt=""
           />
         </SwiperSlide>
@@ -28,7 +38,21 @@ export default function Home() {
         <SwiperSlide>
           <img
             className="rounded h-[30rem] md:h-[120%] w-[100%]  object-cover"
-            src={img2}
+            src={hero2}
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            src={offerImg}
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            src={offerImg2}
             alt=""
           />
         </SwiperSlide>
@@ -36,7 +60,7 @@ export default function Home() {
         <SwiperSlide>
           <img
             className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover  "
-            src={img2}
+            src={hero3}
             alt=""
           />
         </SwiperSlide>
@@ -44,7 +68,21 @@ export default function Home() {
         <SwiperSlide>
           <img
             className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
-            src={img2}
+            src={hero4}
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            src={offerImg}
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="rounded h-[30rem] md:h-[120%] w-[100%] object-cover "
+            src={offerImg2}
             alt=""
           />
         </SwiperSlide>

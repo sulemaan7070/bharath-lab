@@ -3,7 +3,7 @@ import { ImLocation2 } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className="bg-blue-600 text-white pt-10 pb-10 pl-10">
+    <footer className="bg-black text-white pt-10 pb-10 pl-10">
       <p id="title" className="text-3xl p-2">
         Bharath Lab
       </p>
