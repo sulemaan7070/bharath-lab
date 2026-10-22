@@ -1,0 +1,16 @@
+.back { display: inline-block; padding: 16px 0 8px; color: var(--blue); font-weight: 600; text-decoration: none; }
+.back:hover { text-decoration: underline; }
+
+.panel {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  margin: 10px 0 24px;
+  padding: 28px 22px;
+  border-radius: 20px;
+  background: var(--hero);
+}
+@media (min-width: 760px) { .panel { grid-template-columns: 1fr 170px; } }
+.panel h1 { margin: 0 0 8px; font-size: clamp(28px, 6vw, 40px); }
+.panel p { margin: 0; line-height: 1.6; color: var(--muted); }
+.icon { width: 130px; justify-self: center; }

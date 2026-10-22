@@ -1,0 +1,17 @@
+.band {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 40px 0 10px;
+  padding: 30px 12px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  color: #fff;
+}
+.stat { text-align: center; }
+.stat + .stat { border-left: 1px solid rgba(255, 255, 255, 0.22); }
+.icon { display: inline-grid; place-items: center; width: 50px; height: 50px; margin-bottom: 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.15); }
+.number { font-size: clamp(30px, 8.5vw, 54px); font-weight: 800; line-height: 1; }
+.label { margin-top: 8px; font-size: clamp(13px, 3.4vw, 17px); font-weight: 600; color: rgba(255, 255, 255, 0.88); }

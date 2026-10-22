@@ -1,0 +1,2 @@
+.counter { font-variant-numeric: tabular-nums; }
+.suffix { color: var(--yellow); margin-left: 2px; }

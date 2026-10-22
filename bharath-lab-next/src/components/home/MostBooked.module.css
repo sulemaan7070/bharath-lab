@@ -1,0 +1,7 @@
+.section { padding-top: 34px; padding-bottom: 6px; }
+.head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.head > div:first-child { margin-bottom: 0; }
+.arrows { display: flex; gap: 12px; }
+
+.swiper { padding: 6px 2px 14px; }
+.slide { width: min(300px, 82vw); height: auto; }

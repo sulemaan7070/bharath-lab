@@ -1,0 +1,18 @@
+.wrap { padding-top: 18px; }
+.hero { position: relative; overflow: hidden; border-radius: 24px; background: var(--hero); }
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 260px;
+  padding: 28px clamp(20px, 5vw, 60px) 52px;
+}
+.slide h1 { margin: 0 0 10px; font-size: clamp(24px, 4.6vw, 44px); line-height: 1.15; color: var(--blue-dark); }
+@media (prefers-color-scheme: dark) { .slide h1 { color: #fff; } }
+.slide p { margin: 0; font-size: clamp(15px, 2.4vw, 22px); color: var(--muted); }
+.icon { width: clamp(90px, 20vw, 210px); flex: none; }
+
+.arrows { position: absolute; top: 14px; right: 14px; z-index: 2; display: flex; gap: 8px; }
+.dots { position: absolute; left: 0; right: 0; bottom: 14px; z-index: 2; }

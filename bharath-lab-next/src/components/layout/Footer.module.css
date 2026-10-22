@@ -1,0 +1,46 @@
+.footer {
+  margin-top: 40px;
+  background: linear-gradient(160deg, #0e3f87 0%, #091f48 100%);
+  color: #fff;
+}
+
+.row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 28px; padding: 26px 0 20px; }
+
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand img { border-radius: 50%; border: 2px solid #fff; background: #fff; }
+.brand b { display: block; font-size: 20px; }
+.brand span { font-size: 14px; color: rgba(255, 255, 255, 0.72); }
+
+.nav { display: flex; flex-wrap: wrap; gap: 2px 18px; }
+.nav a { padding: 6px 0; color: rgba(255, 255, 255, 0.85); text-decoration: none; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
+.nav a:hover { color: #fff; border-color: var(--yellow); }
+
+.social { display: flex; gap: 10px; }
+.icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  transition: transform 0.2s, background 0.2s;
+}
+.icon:hover { transform: translateY(-3px); background: linear-gradient(45deg, #f9a03f, #e1306c, #833ab4); }
+.icon.whatsapp:hover { background: #25a85a; }
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 76px 22px 0; /* right padding keeps text clear of the floating WhatsApp button */
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13.5px;
+}
+.top { padding: 4px 0; border: 0; background: none; color: #fff; font-weight: 600; }
+.top:hover { color: var(--yellow); }

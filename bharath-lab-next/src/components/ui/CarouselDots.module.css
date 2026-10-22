@@ -1,0 +1,11 @@
+.dots { display: flex; gap: 8px; justify-content: center; }
+.dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: var(--line);
+  transition: 0.3s;
+}
+.dots .active { width: 26px; background: var(--blue); }

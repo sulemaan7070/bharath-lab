@@ -1,0 +1,27 @@
+.section { padding-top: 10px; padding-bottom: 20px; }
+.head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.head > div:first-child { margin-bottom: 0; }
+
+.controls { display: flex; align-items: center; gap: 12px; }
+.chips { display: flex; gap: 8px; align-items: center; }
+.chip {
+  padding: 8px 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.chip.on { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+.swiper { padding: 6px 2px 14px; }
+.slide { width: min(270px, 80vw); height: auto; }
+.slide > * { height: 100%; }
+
+/* Phones: keep chips and arrows on one line so the page never scrolls sideways */
+@media (max-width: 560px) {
+  .controls { width: 100%; gap: 8px; }
+  .chips { gap: 6px; margin-right: auto; }
+  .chip { padding: 8px 14px; }
+  .controls .arrow { width: 34px; height: 34px; }
+}

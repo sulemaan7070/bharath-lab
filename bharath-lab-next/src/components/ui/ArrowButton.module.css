@@ -1,0 +1,15 @@
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--blue);
+  background: var(--card);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  flex: none;
+  padding: 0;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.arrow:hover { background: var(--blue); color: #fff; }
+.arrow:active { transform: scale(0.94); }

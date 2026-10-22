@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(20, 87, 184, 0.18); }
+
+.image { position: relative; aspect-ratio: 1 / 1; padding: 14px; background: #fff; border-bottom: 1px solid var(--line); }
+.image img { padding: 14px; transition: transform 0.5s; }
+.card:hover .image img { transform: scale(1.05); }
+
+.body { display: flex; flex: 1; flex-direction: column; padding: 16px 18px; }
+.category { align-self: flex-end; font-size: 14px; color: var(--muted); }
+.body h3 { margin: 8px 0; font-size: 18px; }
+.body p { flex: 1; margin: 0 0 14px; line-height: 1.55; color: var(--muted); }
+
+.footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.link { display: flex; align-items: center; gap: 8px; color: var(--blue); font-weight: 600; text-decoration: none; }
+.link i { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--blue-light); transition: transform 0.2s; }
+.link:hover i { transform: translateX(4px); }
+
+/* Mobile: photo on the right, text on the left */
+@media (max-width: 640px) {
+  .card { flex-direction: row-reverse; align-items: stretch; border-radius: 22px; }
+  .card:hover { transform: none; box-shadow: none; }
+  .image { flex: 0 0 42%; aspect-ratio: auto; min-height: 200px; padding: 0; border: 0; }
+  .image img { padding: 8px; }
+  .body { flex: 1; min-width: 0; justify-content: center; }
+  .category { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .body h3 { margin: 6px 0; line-height: 1.25; }
+  .body p { flex: none; margin: 0 0 12px; font-size: 14px; line-height: 1.5; }
+  .footer { justify-content: flex-start; padding-top: 10px; }
+  .tag { display: none; }
+}
